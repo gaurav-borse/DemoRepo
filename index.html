@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-calculator"></i> Web Development Cost Calculator</h1>
+                <p>Get an instant estimate for your web application development project</p>
+            </div>
+        </header>
+
+        <div class="calculator-container">
+            <form id="costCalculator" class="calculator-form">
+                <!-- Project Type Section -->
+                <div class="section">
+                    <h2><i class="fas fa-globe"></i> Project Type</h2>
+                    <div class="form-group">
+                        <label for="projectType">What type of web application do you need?</label>
+                        <select id="projectType" name="projectType" required>
+                            <option value="">Select project type</option>
+                            <option value="basic-website">Basic Website (5-10 pages)</option>
+                            <option value="business-website">Business Website (10-20 pages)</option>
+                            <option value="ecommerce">E-commerce Platform</option>
+                            <option value="web-app">Custom Web Application</option>
+                            <option value="saas">SaaS Platform</option>
+                            <option value="marketplace">Marketplace Platform</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Design Complexity -->
+                <div class="section">
+                    <h2><i class="fas fa-palette"></i> Design & UI/UX</h2>
+                    <div class="form-group">
+                        <label for="designComplexity">Design Complexity</label>
+                        <select id="designComplexity" name="designComplexity" required>
+                            <option value="">Select design complexity</option>
+                            <option value="template">Template-based Design</option>
+                            <option value="custom-simple">Custom Simple Design</option>
+                            <option value="custom-advanced">Custom Advanced Design</option>
+                            <option value="premium">Premium Custom Design</option>
+                        </select>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="responsive-design">
+                            <span class="checkmark"></span>
+                            Responsive Design (Mobile-friendly)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="animations">
+                            <span class="checkmark"></span>
+                            Custom Animations & Interactions
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="brand-design">
+                            <span class="checkmark"></span>
+                            Brand Identity Design
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="section">
+                    <h2><i class="fas fa-cogs"></i> Features & Functionality</h2>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="user-auth">
+                            <span class="checkmark"></span>
+                            User Authentication & Registration
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="cms">
+                            <span class="checkmark"></span>
+                            Content Management System (CMS)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="ecommerce-features">
+                            <span class="checkmark"></span>
+                            E-commerce Features (Cart, Checkout, Payments)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="search-functionality">
+                            <span class="checkmark"></span>
+                            Advanced Search & Filtering
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="admin-panel">
+                            <span class="checkmark"></span>
+                            Admin Dashboard
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="api-integration">
+                            <span class="checkmark"></span>
+                            Third-party API Integrations
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="real-time">
+                            <span class="checkmark"></span>
+                            Real-time Features (Chat, Notifications)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="multi-language">
+                            <span class="checkmark"></span>
+                            Multi-language Support
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="seo">
+                            <span class="checkmark"></span>
+                            SEO Optimization
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="analytics">
+                            <span class="checkmark"></span>
+                            Analytics Integration
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Database & Backend -->
+                <div class="section">
+                    <h2><i class="fas fa-database"></i> Backend & Database</h2>
+                    <div class="form-group">
+                        <label for="backendComplexity">Backend Complexity</label>
+                        <select id="backendComplexity" name="backendComplexity" required>
+                            <option value="">Select backend complexity</option>
+                            <option value="none">No Backend (Static Site)</option>
+                            <option value="simple">Simple Backend</option>
+                            <option value="moderate">Moderate Backend</option>
+                            <option value="complex">Complex Backend</option>
+                            <option value="enterprise">Enterprise-level Backend</option>
+                        </select>
+                    </div>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="database-design">
+                            <span class="checkmark"></span>
+                            Custom Database Design
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="cloud-hosting">
+                            <span class="checkmark"></span>
+                            Cloud Hosting Setup
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="security">
+                            <span class="checkmark"></span>
+                            Advanced Security Features
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="section">
+                    <h2><i class="fas fa-clock"></i> Timeline</h2>
+                    <div class="form-group">
+                        <label for="timeline">Desired Timeline</label>
+                        <select id="timeline" name="timeline" required>
+                            <option value="">Select timeline</option>
+                            <option value="rush">Rush (2-4 weeks)</option>
+                            <option value="standard">Standard (1-3 months)</option>
+                            <option value="relaxed">Relaxed (3-6 months)</option>
+                            <option value="extended">Extended (6+ months)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Additional Services -->
+                <div class="section">
+                    <h2><i class="fas fa-tools"></i> Additional Services</h2>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="maintenance">
+                            <span class="checkmark"></span>
+                            6 Months Maintenance & Support
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="training">
+                            <span class="checkmark"></span>
+                            Training & Documentation
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="testing">
+                            <span class="checkmark"></span>
+                            Quality Assurance & Testing
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="features" value="performance">
+                            <span class="checkmark"></span>
+                            Performance Optimization
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" id="calculateBtn" class="calculate-btn">
+                    <i class="fas fa-calculator"></i> Calculate Development Cost
+                </button>
+            </form>
+
+            <!-- Results Section -->
+            <div id="results" class="results-section" style="display: none;">
+                <h2><i class="fas fa-chart-line"></i> Your Project Estimate</h2>
+                <div class="cost-summary">
+                    <div class="cost-item total-cost">
+                        <span class="cost-label">Total Estimated Cost:</span>
+                        <span id="totalCost" class="cost-value">$0</span>
+                    </div>
+                    <div class="cost-item">
+                        <span class="cost-label">Estimated Timeline:</span>
+                        <span id="estimatedTimeline" class="cost-value">0 weeks</span>
+                    </div>
+                </div>
+                
+                <div class="cost-breakdown">
+                    <h3>Cost Breakdown:</h3>
+                    <div id="costBreakdown"></div>
+                </div>
+
+                <div class="project-summary">
+                    <h3>Project Summary:</h3>
+                    <div id="projectSummary"></div>
+                </div>
+
+                <div class="action-buttons">
+                    <button type="button" id="printBtn" class="action-btn">
+                        <i class="fas fa-print"></i> Print Estimate
+                    </button>
+                    <button type="button" id="shareBtn" class="action-btn">
+                        <i class="fas fa-share"></i> Share Results
+                    </button>
+                    <button type="button" id="resetBtn" class="action-btn secondary">
+                        <i class="fas fa-redo"></i> Start Over
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2024 Web Development Cost Calculator. Professional estimates for your web projects.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
